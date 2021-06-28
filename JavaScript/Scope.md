@@ -46,7 +46,7 @@ let 특징
 const 특징
 ---------
 
-* 변수 재선언 불가능, 변수 재할당 불가능
+* 변수 재선언 불가능, 변수 재할당 불가능 - const는 상수이기 때문
 
 * 변수 호이스팅 불가능
 
@@ -91,27 +91,3 @@ const 특징
       console.log(bar); // ReferenceError: bar is not defined
    
 <br>
-
-
-
-
-
-   <!-- 호이스팅
-      var 선언문이나 function 선언문 등을 해당 스코프의 선두로 옮긴 것처럼 동작하는 특성
-      
-      console.log(foo); // undefined
-      var foo;
-
-      console.log(bar); // Error: Uncaught ReferenceError: bar is not defined
-      let bar;
-
-      호이스팅 3단계
-      
-      선언 단계(Declaration phase)
-      변수를 실행 컨텍스트의 변수 객체(Variable Object)에 등록한다. 이 변수 객체는 스코프가 참조하는 대상이 된다.
-
-      초기화 단계(Initialization phase)
-      변수 객체(Variable Object)에 등록된 변수를 위한 공간을 메모리에 확보한다. 이 단계에서 변수는 undefined로 초기화된다.
-
-      할당 단계(Assignment phase)
-      undefined로 초기화된 변수에 실제 값을 할당한다. -->
